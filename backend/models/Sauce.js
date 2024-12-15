@@ -15,6 +15,3 @@ const sauceSchema = mongoose.Schema({ //cree le schema et definit sont contenu
 });
 
 module.exports = mongoose.model('Sauce', sauceSchema); // J'exporte le schema
-
-
-//crud

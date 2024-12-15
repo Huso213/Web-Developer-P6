@@ -1,4 +1,6 @@
+//import module express
 const express = require('express');
+//creation routes express 
 const router = express.Router();
 
 const sauceCtrl = require('../controllers/sauce');
@@ -25,7 +27,7 @@ router.delete('/:id', auth, sauceCtrl.deleteSauce);
 //route pour liker/disliker
 router.post('/:id/like', auth, sauceCtrl.likeSauce);
 
-
+//exportation pour utiliser dans d'autres fichiers
 module.exports = router;
 
  

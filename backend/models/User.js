@@ -1,6 +1,8 @@
+//importation module 'mongoose' pour connection MongoDB
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator'); //importe le package m-u-v
 
+//Schema utilisateur connection Mongoose
 const userSchema = mongoose.Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true }
